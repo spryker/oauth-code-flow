@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerTest\Zed\OauthCodeFlow\Communication\Plugin;
+namespace SprykerTest\Zed\OauthCodeFlow\Communication\Plugin\Oauth;
 
 use Codeception\Test\Unit;
 use Generated\Shared\Transfer\OauthGrantTypeConfigurationTransfer;
@@ -21,6 +21,7 @@ use Spryker\Zed\OauthExtension\Dependency\Plugin\OauthRequestGrantTypeConfigurat
  * @group OauthCodeFlow
  * @group Communication
  * @group Plugin
+ * @group Oauth
  * @group CustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPluginTest
  * Add your own group annotations below this line
  */
