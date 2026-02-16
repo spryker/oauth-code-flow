@@ -17,7 +17,6 @@ use Spryker\Zed\OauthExtension\Dependency\Plugin\OauthRequestGrantTypeConfigurat
 
 /**
  * @method \Spryker\Zed\OauthCodeFlow\OauthCodeFlowConfig getConfig()
- * @method \Spryker\Zed\OauthCodeFlow\Business\OauthFacadeInterface getFacade()
  */
 class CustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPlugin extends AbstractPlugin implements OauthRequestGrantTypeConfigurationProviderPluginInterface
 {
