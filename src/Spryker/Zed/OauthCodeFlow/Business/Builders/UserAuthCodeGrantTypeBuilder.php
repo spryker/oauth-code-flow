@@ -32,12 +32,6 @@ class UserAuthCodeGrantTypeBuilder implements GrantTypeBuilderInterface
     use RepositoryResolverAwareTrait;
     use EntityManagerResolverAwareTrait;
 
-    /**
-     * @param \Spryker\Zed\Oauth\Business\Model\League\RepositoryBuilderInterface $repositoryBuilder
-     * @param \DateInterval $refreshTokenTTL
-     *
-     * @return \Spryker\Zed\Oauth\Business\Model\League\Grant\GrantTypeInterface
-     */
     public function buildGrant(
         RepositoryBuilderInterface $repositoryBuilder,
         DateInterval $refreshTokenTTL
@@ -51,9 +45,6 @@ class UserAuthCodeGrantTypeBuilder implements GrantTypeBuilderInterface
         return $userAuthCodeGrantType;
     }
 
-    /**
-     * @return \League\OAuth2\Server\Repositories\AuthCodeRepositoryInterface
-     */
     protected function createAuthCodeRepository(): AuthCodeRepositoryInterface
     {
         return new AuthCodeRepository(

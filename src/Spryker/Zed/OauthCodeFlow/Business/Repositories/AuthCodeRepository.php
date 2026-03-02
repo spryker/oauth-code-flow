@@ -25,10 +25,6 @@ class AuthCodeRepository implements AuthCodeRepositoryInterface
      */
     protected OauthCodeFlowEntityManagerInterface $oauthCodeFlowEntityManager;
 
-    /**
-     * @param \Spryker\Zed\OauthCodeFlow\Persistence\OauthCodeFlowRepositoryInterface $oauthCodeFlowRepository
-     * @param \Spryker\Zed\OauthCodeFlow\Persistence\OauthCodeFlowEntityManagerInterface $oauthCodeFlowEntityManager
-     */
     public function __construct(
         OauthCodeFlowRepositoryInterface $oauthCodeFlowRepository,
         OauthCodeFlowEntityManagerInterface $oauthCodeFlowEntityManager

@@ -18,17 +18,11 @@ use Spryker\Zed\OauthCodeFlow\Persistence\Propel\Mapper\AuthCodeMapper;
  */
 class OauthCodeFlowPersistenceFactory extends AbstractPersistenceFactory
 {
-    /**
-     * @return \Orm\Zed\OauthCodeFlow\Persistence\SpyOauthCodeFlowAuthCodeQuery
-     */
     public function createAuthCodeQuery(): SpyOauthCodeFlowAuthCodeQuery
     {
         return SpyOauthCodeFlowAuthCodeQuery::create();
     }
 
-    /**
-     * @return \Spryker\Zed\OauthCodeFlow\Persistence\Propel\Mapper\AuthCodeMapper
-     */
     public function createAuthCodeMapper(): AuthCodeMapper
     {
         return new AuthCodeMapper();

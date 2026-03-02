@@ -14,10 +14,5 @@ use Generated\Shared\Transfer\AuthCodeTransfer;
  */
 interface OauthCodeFlowRepositoryInterface
 {
-    /**
-     * @param string $codeId
-     *
-     * @return \Generated\Shared\Transfer\AuthCodeTransfer|null
-     */
     public function findAuthCodeByIdentifier(string $codeId): ?AuthCodeTransfer;
 }

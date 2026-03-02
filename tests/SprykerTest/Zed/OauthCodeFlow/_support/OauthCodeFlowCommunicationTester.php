@@ -36,17 +36,11 @@ class OauthCodeFlowCommunicationTester extends Actor
      */
     public const GRANT_TYPE_AUTHORIZATION_CODE = 'authorization_code';
 
-    /**
-     * @return \Generated\Shared\Transfer\OauthRequestTransfer
-     */
     public function createOauthRequestTransfer(): OauthRequestTransfer
     {
         return new OauthRequestTransfer();
     }
 
-    /**
-     * @return \Generated\Shared\Transfer\GlueAuthenticationRequestContextTransfer
-     */
     public function createGlueAuthenticationRequestContextTransfer(): GlueAuthenticationRequestContextTransfer
     {
         return new GlueAuthenticationRequestContextTransfer();

@@ -67,11 +67,6 @@ class AuthCodeGrantType extends AuthCodeGrant implements GrantTypeInterface
      */
     protected $applicationContext;
 
-    /**
-     * @param \Spryker\Zed\OauthCodeFlow\OauthCodeFlowConfig $config
-     * @param \League\OAuth2\Server\Repositories\AuthCodeRepositoryInterface $authCodeRepository
-     * @param \Spryker\Zed\Oauth\Business\Model\League\Repositories\RefreshTokenRepositoryInterface $refreshTokenRepository
-     */
     public function __construct(
         OauthCodeFlowConfig $config,
         AuthCodeRepositoryInterface $authCodeRepository,

@@ -9,10 +9,5 @@ namespace Spryker\Zed\OauthCodeFlow\Persistence;
 
 interface OauthCodeFlowEntityManagerInterface
 {
-    /**
-     * @param string $identifier
-     *
-     * @return void
-     */
     public function deleteAuthCodeByIdentifier(string $identifier): void;
 }

@@ -15,11 +15,6 @@ use Spryker\Zed\Kernel\Persistence\AbstractRepository;
  */
 class OauthCodeFlowRepository extends AbstractRepository implements OauthCodeFlowRepositoryInterface
 {
-    /**
-     * @param string $codeId
-     *
-     * @return \Generated\Shared\Transfer\AuthCodeTransfer|null
-     */
     public function findAuthCodeByIdentifier(string $codeId): ?AuthCodeTransfer
     {
         $authCodeEntity = $this->getFactory()

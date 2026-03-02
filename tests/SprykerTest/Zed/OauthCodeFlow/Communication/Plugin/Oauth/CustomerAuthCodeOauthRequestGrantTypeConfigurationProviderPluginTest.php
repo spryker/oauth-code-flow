@@ -39,9 +39,6 @@ class CustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPluginTest exten
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testCustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPluginIsApplicable(): void
     {
         //Arrange
@@ -61,9 +58,6 @@ class CustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPluginTest exten
         $this->assertTrue($isApplicable);
     }
 
-    /**
-     * @return void
-     */
     public function testCustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPluginIsNotApplicable(): void
     {
         //Arrange
@@ -81,9 +75,6 @@ class CustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPluginTest exten
         $this->assertFalse($isApplicable);
     }
 
-    /**
-     * @return void
-     */
     public function testCustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPluginGetsGrantTypeConfiguration(): void
     {
         //Act
@@ -96,9 +87,6 @@ class CustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPluginTest exten
         $this->assertSame(CustomerAuthCodeGrantTypeBuilder::class, $oauthGrantTypeConfiguration->getBuilderFullyQualifiedClassName());
     }
 
-    /**
-     * @return \Spryker\Zed\OauthExtension\Dependency\Plugin\OauthRequestGrantTypeConfigurationProviderPluginInterface
-     */
     protected function createCustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPlugin(): OauthRequestGrantTypeConfigurationProviderPluginInterface
     {
         return new CustomerAuthCodeOauthRequestGrantTypeConfigurationProviderPlugin();

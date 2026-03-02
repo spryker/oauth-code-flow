@@ -12,12 +12,6 @@ use Orm\Zed\OauthCodeFlow\Persistence\SpyOauthCodeFlowAuthCode;
 
 class AuthCodeMapper
 {
-    /**
-     * @param \Orm\Zed\OauthCodeFlow\Persistence\SpyOauthCodeFlowAuthCode $authCodeEntity
-     * @param \Generated\Shared\Transfer\AuthCodeTransfer $authCodeTransfer
-     *
-     * @return \Generated\Shared\Transfer\AuthCodeTransfer
-     */
     public function mapAuthCodeEntityToAuthCodeTransfer(
         SpyOauthCodeFlowAuthCode $authCodeEntity,
         AuthCodeTransfer $authCodeTransfer

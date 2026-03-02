@@ -14,11 +14,6 @@ use Spryker\Zed\Kernel\Persistence\AbstractEntityManager;
  */
 class OauthCodeFlowEntityManager extends AbstractEntityManager implements OauthCodeFlowEntityManagerInterface
 {
-    /**
-     * @param string $identifier
-     *
-     * @return void
-     */
     public function deleteAuthCodeByIdentifier(string $identifier): void
     {
         /** @var \Orm\Zed\OauthCodeFlow\Persistence\SpyOauthCodeFlowAuthCode|null $oauthAuthCodeEntity */
