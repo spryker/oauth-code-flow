@@ -12,6 +12,8 @@ use Spryker\Zed\Kernel\AbstractBundleConfig;
 class OauthCodeFlowConfig extends AbstractBundleConfig
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const GRANT_TYPE_AUTHORIZATION_CODE = 'authorization_code';
